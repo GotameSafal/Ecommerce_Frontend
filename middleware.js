@@ -15,7 +15,7 @@ export async function middleware(req) {
       const data = await (
         await fetch(`${process.env.BACKEND_URL}/me`, {
           headers: {
-            Cookie: `Ecommerce=${token}`,
+            authorization: `Bearer ${token}`,
           },
         })
       ).json();
