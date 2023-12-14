@@ -133,8 +133,6 @@ export const UserNavbar = () => {
       })
       .catch((error) => console.error(error));
   };
-  console.log(user);
-  console.log(token);
   return (
     <div>
       {screen <= 768 && (
